@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         SaveMyNotes
+// @author       DiamondPie
 // @namespace    http://tampermonkey.net/
 // @version      2025-07-21
 // @description  去除Save My Exams复习笔记的5次查看限制
