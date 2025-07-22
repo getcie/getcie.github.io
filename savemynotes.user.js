@@ -2,10 +2,11 @@
 // @name         SaveMyNotes
 // @author       DiamondPie
 // @namespace    http://tampermonkey.net/
-// @version      2025-07-21
+// @version      2025-07-22
 // @description  去除Save My Exams复习笔记的5次查看限制
 // @description:en Remove the 5-view limit for revision notes of Save My Exams
 // @match        *://www.savemyexams.com/*
+// @match        *://savemyexams.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=savemyexams.com
 // @grant        none
 // @license      MIT
@@ -14,7 +15,7 @@
 
 const FORBIDDEN_CLASSES = [
     '[class*="RevisionNotesCountdownBanner_banner"]',
-    '[class*="Wrapper_wrapper"].w-100',
+    '[class*="Wrapper_wrapper"] div [class*="FeatureSliderCTA_container"]',
     '.d-flex.flex-wrap.flex-md-nowrap.gap-3.mb-4',
     '.container-fluid .d-flex.align-items-center',
     'main .pb-5',
